@@ -73,5 +73,5 @@ My implementation of a neural network that learns to classify handwritten digits
   Epoch 29: 9484 / 10000 (94.84%)  
   Training took 16.019150959 seconds
 
-  - The chapter 3 implementation will include improved weight and bias initialisation, cross-entropy cost, andf regularisation. 
+- The chapter 3 implementation will include improved weight and bias initialisation, cross-entropy cost, andf regularisation. 
   
