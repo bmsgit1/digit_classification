@@ -1,5 +1,5 @@
 # digit_classification
-My implementation of a neural network that learns to classify handwritten digits, the main project in Michael Neilsen's fantastic book _Neural Networks and Deep Learning_ (http://neuralnetworksanddeeplearning.com/index.html). It is trained on the MNIST dataset (60000 images) split into a 50000-image test set, 10000-image validation set (for setting hyperparameters) and 10000-image test set. I am using an Apple M2 CPU.
+My implementation of a neural network that learns to classify handwritten digits, the main project in Michael Neilsen's fantastic book _Neural Networks and Deep Learning_ (http://neuralnetworksanddeeplearning.com/index.html). It is trained on the MNIST dataset (60000 images in a compressed Python pickle file mnist.pkl.gz) split into a 50000-image test set, 10000-image validation set (for setting hyperparameters) and 10000-image test set. I am using an Apple M2 CPU.
 
 - network.py is a the chapter 1 implementation, a shallow neural net using mini-batch stochastic gradient descent with no optimisations. Example run of a three layer network with sizes [784, 30, 10], learning rate = 3.0, 30 epochs and mini batch size of 10 gives:  
 
