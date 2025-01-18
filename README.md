@@ -34,8 +34,7 @@ My implementation of a neural network that learns to classify handwritten digits
   Epoch 27: 9497 / 10000 (94.97%)  
   Epoch 28: 9493 / 10000 (94.93%)  
   Epoch 29: 9477 / 10000 (94.77%)  
-  Training took 79.958410042 seconds  
-  Max accuracy at Epoch 26  
+  Training took 79.958410042 seconds     
 
 - network2.py is the chapter 2 implementation. It is the same as network.py but with batched backpropagation, so the gradients for all training examples in a mini-batch are computed simultaneously.
   Example run of a three layer network with sizes [784, 30, 10], learning rate = 3.0, 30 epochs and mini batch size of 10 gives:  
