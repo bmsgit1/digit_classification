@@ -37,7 +37,7 @@ My implementation of a neural network that learns to classify handwritten digits
   Training took 79.958410042 seconds  
   Max accuracy at Epoch 26  
 
-- network_fullmatrix.py is the chapter 2 implementation. It is the same as network.py but with batched backpropagation, so the gradients for all training examples in a mini-batch are computed simultaneously.
+- network2.py is the chapter 2 implementation. It is the same as network.py but with batched backpropagation, so the gradients for all training examples in a mini-batch are computed simultaneously.
   Example run of a three layer network with sizes [784, 30, 10], learning rate = 3.0, 30 epochs and mini batch size of 10 gives:  
 
   _% python3 training_run.py_   
@@ -73,5 +73,39 @@ My implementation of a neural network that learns to classify handwritten digits
   Epoch 29: 9484 / 10000 (94.84%)  
   Training took 16.019150959 seconds
 
-- The chapter 3 implementation will include improved weight and bias initialisation, cross-entropy cost, and regularisation. 
+- network3.py is the chapter 3 implementation. Same as network_fullmatrix.py with improved weight initialisation, cross-entropy cost, and L2 regularisation.
+  Example run of a three layer network with sizes [784, 30, 10], learning rate = 0.5, 30 epochs, regularisation factor = 5.0 and mini batch size of 10 gives:    
+
+  _% python3 training_run.py_
+  Epoch 0: 9349 / 10000 (93.49%)  
+  Epoch 1: 9424 / 10000 (94.24%)  
+  Epoch 2: 9418 / 10000 (94.17999999999999%)  
+  Epoch 3: 9514 / 10000 (95.14%)  
+  Epoch 4: 9483 / 10000 (94.83%)  
+  Epoch 5: 9542 / 10000 (95.42%)  
+  Epoch 6: 9523 / 10000 (95.23%)  
+  Epoch 7: 9488 / 10000 (94.88%)  
+  Epoch 8: 9572 / 10000 (95.72%)  
+  Epoch 9: 9573 / 10000 (95.73%)  
+  Epoch 10: 9558 / 10000 (95.58%)  
+  Epoch 11: 9560 / 10000 (95.6%)  
+  Epoch 12: 9583 / 10000 (95.83%)  
+  Epoch 13: 9585 / 10000 (95.85000000000001%)  
+  Epoch 14: 9554 / 10000 (95.54%)  
+  Epoch 15: 9574 / 10000 (95.74000000000001%)  
+  Epoch 16: 9543 / 10000 (95.43%)  
+  Epoch 17: 9604 / 10000 (96.04%)  
+  Epoch 18: 9615 / 10000 (96.15%)  
+  Epoch 19: 9586 / 10000 (95.86%)  
+  Epoch 20: 9585 / 10000 (95.85000000000001%)  
+  Epoch 21: 9561 / 10000 (95.61%)  
+  Epoch 22: 9595 / 10000 (95.95%)  
+  Epoch 23: 9608 / 10000 (96.08%)  
+  Epoch 24: 9559 / 10000 (95.59%)  
+  Epoch 25: 9595 / 10000 (95.95%)  
+  Epoch 26: 9545 / 10000 (95.45%)  
+  Epoch 27: 9562 / 10000 (95.62%)  
+  Epoch 28: 9591 / 10000 (95.91%)  
+  Epoch 29: 9610 / 10000 (96.1%)  
+  Training took 15.84347275 seconds   
   
