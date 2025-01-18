@@ -72,7 +72,7 @@ My implementation of a neural network that learns to classify handwritten digits
   Epoch 29: 9484 / 10000 (94.84%)  
   Training took 16.019150959 seconds
 
-- network3.py is the chapter 3 implementation. Same as network_fullmatrix.py with improved weight initialisation, cross-entropy cost, and L2 regularisation.
+- network3.py is the chapter 3 implementation. Same as network2.py with improved weight initialisation, cross-entropy cost, and L2 regularisation.
   Example run of a three layer network with sizes [784, 30, 10], learning rate = 0.5, 30 epochs, regularisation factor = 5.0 and mini batch size of 10 gives:    
 
   _% python3 training_run.py_
