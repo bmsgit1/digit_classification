@@ -1,7 +1,8 @@
 # digit_classification
-My implementation of a neural network that learns to classify handwritten digits, the main project in Michael Neilsen's fantastic book _Neural Networks and Deep Learning_ (http://neuralnetworksanddeeplearning.com/index.html). It is trained on the MNIST dataset (60000 images in a compressed Python pickle file mnist.pkl.gz) split into a 50000-image test set, 10000-image validation set (for setting hyperparameters) and 10000-image test set. I am using an Apple M2 CPU. I am using this book to gain an intuitive understanding of ml fundamentals.
+My implementation of a neural network that learns to classify handwritten digits, the main project in Michael Neilsen's fantastic book _Neural Networks and Deep Learning_ (http://neuralnetworksanddeeplearning.com/index.html). It is trained on the MNIST dataset (60000 images in a compressed Python pickle file mnist.pkl.gz) split into a 50000-image test set, 10000-image validation set (for setting hyperparameters) and 10000-image test set. I am using this book to gain an intuitive understanding of ml fundamentals.
 
-- network.py is a the chapter 1 implementation, a shallow neural net using mini-batch stochastic gradient descent with no optimisations. Example run of a three layer network with sizes [784, 30, 10], learning rate = 3.0, 30 epochs and mini batch size of 10 gives:  
+- network.py is a the chapter 1 implementation, a shallow neural net using mini-batch stochastic gradient descent with no optimisations.
+  Example run on an Apple M2 CPU of a three layer network with sizes [784, 30, 10], learning rate = 3.0, 30 epochs and mini batch size of 10 gives:  
 
   _% python3 training_run.py_   
   Epoch 0: 9042 / 10000 (90.42%)  
@@ -37,7 +38,7 @@ My implementation of a neural network that learns to classify handwritten digits
   Training took 79.958410042 seconds     
 
 - network2.py is the chapter 2 implementation. It is the same as network.py but with batched backpropagation, so the gradients for all training examples in a mini-batch are computed simultaneously.
-  Example run of a three layer network with sizes [784, 30, 10], learning rate = 3.0, 30 epochs and mini batch size of 10 gives:  
+  Example run on an Apple M2 CPU of a three layer network with sizes [784, 30, 10], learning rate = 3.0, 30 epochs and mini batch size of 10 gives:  
 
   _% python3 training_run.py_   
   Epoch 0: 9055 / 10000 (90.55%)  
@@ -73,7 +74,7 @@ My implementation of a neural network that learns to classify handwritten digits
   Training took 16.019150959 seconds
 
 - network3.py is the chapter 3 implementation. Same as network2.py with improved weight initialisation, cross-entropy cost, and L2 regularisation.
-  Example run of a three layer network with sizes [784, 30, 10], learning rate = 0.5, 30 epochs, regularisation factor = 5.0 and mini batch size of 10 gives:    
+  Example run on an Apple M2 CPU of a three layer network with sizes [784, 30, 10], learning rate = 0.5, 30 epochs, regularisation factor = 5.0 and mini batch size of 10 gives:    
 
   _% python3 training_run.py_
   Epoch 0: 9349 / 10000 (93.49%)  
