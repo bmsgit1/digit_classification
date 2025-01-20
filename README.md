@@ -107,5 +107,7 @@ My implementation of a neural network that learns to classify handwritten digits
   Epoch 27: 9562 / 10000 (95.62%)  
   Epoch 28: 9591 / 10000 (95.91%)  
   Epoch 29: 9610 / 10000 (96.1%)  
-  Training took 15.84347275 seconds   
+  Training took 15.84347275 seconds
+
+  - I will next write code to optimise the model's hyper-parameters on the validation set, and to plot classification accuracy vs epochs for each data set to detect the extent of overfitting. I am building up to writing a CNN to solve the digit classification problem. 
   
